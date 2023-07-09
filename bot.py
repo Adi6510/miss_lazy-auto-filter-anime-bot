@@ -2,7 +2,7 @@ import logging
 import logging.config
 
 from aiohttp import web
-from miss_lazy import web_server
+from LUCIFER import web_server
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
@@ -32,7 +32,7 @@ class Bot(Client):
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
             workers=50,
-            plugins={"root": "miss_lazy"},
+            plugins={"root": "LUCIFER"},
             sleep_threshold=5,
         )
 
